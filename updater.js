@@ -43,7 +43,7 @@ class Updater {
 
 				console.log("Checking for update...");
 
-				var latestRelease = (await axios.get("https://api.github.com/repos/TheKodeToad/Sol-Client/releases/latest")).data;
+				var latestRelease = (await axios.get("https://api.github.com/repos/1ProCrafters/ProCrafters-Client/releases/latest")).data;
 
 				if(latestRelease.name == currentVersion) {
 					console.log("No updates found");
@@ -75,7 +75,7 @@ class Updater {
 					webPreferences: {
 						preload: path.join(__dirname, "/updater-dom.js")
 					},
-					title: "Updating Sol Client...",
+					title: "Updating ProCrafters Client...",
 					show: false,
 					backgroundColor: "#1e1e1e",
 					resizable: false

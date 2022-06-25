@@ -27,15 +27,15 @@ class Utils {
 		Utils.legacyDirectory = os.homedir();
 		switch(Utils.getOsName()) {
 			case "linux":
-				Utils.dataDirectory += "/.config/Sol Client";
+				Utils.dataDirectory += "/.config/ProCrafters Client";
 				Utils.legacyDirectory += "/.config/parrotclient";
 				break;
 			case "osx":
-				Utils.dataDirectory += "/Library/Application Support/Sol Client";
+				Utils.dataDirectory += "/Library/Application Support/ProCrafters Client";
 				Utils.legacyDirectory += "/Library/Application Support/parrotclient";
 				break;
 			case "windows":
-				Utils.dataDirectory += "/AppData/Roaming/Sol Client";
+				Utils.dataDirectory += "/AppData/Roaming/ProCrafters Client";
 				Utils.legacyDirectory += "/AppData/Roaming/parrotclient";
 				break;
 		}

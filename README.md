@@ -1,4 +1,4 @@
-# Sol Client
+# ProCrafters Client
 
 
 <a href="https://github.com/Sol-Client/Client/actions/workflows/build.yml"><img src="https://img.shields.io/github/workflow/status/Sol-Client/Client/build?style=for-the-badge&logo=github&logoColor=white"/></a>&nbsp;
@@ -79,7 +79,7 @@ If there are any issues with us using your code, please open an issue.
 ## Safety
 The code for this client is available, meaning that you can see what it does.
 
-This client has been tested by multiple people on Hypixel, and it disables disallowed mods automatically. There may be some unknown servers, but just disable the correct mods and you should be fine, as all Sol Client mods are designed to not change the behaviour of the player.
+This client has been tested by multiple people on Hypixel, and it disables disallowed mods automatically. There may be some unknown servers, but just disable the correct mods and you should be fine, as all ProCrafters Client mods are designed to not change the behaviour of the player.
 
 ## Credits
 [TheKodeToad](https://github.com/TheKodeToad) / [mcblueparrot](https://mine.ly/mcblueparrot.1): Programmer (turning tea into code).

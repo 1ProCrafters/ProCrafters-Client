@@ -9,7 +9,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.function.Supplier;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.ArrayUtils;
@@ -82,7 +81,6 @@ import lombok.Getter;
 import lombok.Setter;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiMainMenu;
-import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.multiplayer.ServerData;
 import net.minecraft.client.multiplayer.WorldClient;
 import net.minecraft.client.resources.IResource;
@@ -96,7 +94,7 @@ import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.ResourceLocation;
 
 /**
- * Main class for Sol Client.
+ * Main class for ProCrafters Client.
  */
 public class Client {
 
@@ -124,7 +122,7 @@ public class Client {
 	private ChatChannelSystem chatChannelSystem;
 
 	public static final String VERSION = System.getProperty("io.github.solclient.client.version", "DEVELOPMENT TEST");
-	public static final String NAME = "Sol Client " + VERSION;
+	public static final String NAME = "ProCrafters Client " + VERSION;
 	public static final String KEY_TRANSLATION_KEY = "sol_client.key";
 	public static final String KEY_CATEGORY = KEY_TRANSLATION_KEY + ".category";
 	public static final boolean DEV = isDevelopment();
@@ -141,7 +139,7 @@ public class Client {
 		Utils.resetLineWidth();
 		new File(mc.mcDataDir, "server-resource-packs").mkdirs(); // Fix crash
 
-		System.setProperty("http.agent", "Sol Client/" + VERSION);
+		System.setProperty("http.agent", "ProCrafters Client/" + VERSION);
 
 		LOGGER.info("Initialising...");
 		bus.register(this);

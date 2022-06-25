@@ -37,7 +37,7 @@ async function run() {
 			webPreferences: {
 				preload: path.join(__dirname, "app.js")
 			},
-			title: "Sol Client " + Utils.version,
+			title: "ProCrafters Client " + Utils.version,
 			show: false,
 			backgroundColor: "#1e1e1e"
 		};
@@ -146,7 +146,7 @@ If you have private messages, try reproducing this issue again.`,
 [Game Log on Hastebin](${hasteUrl})`
 		}
 
-		var running = `Running Sol Client v${Utils.version}`;
+		var running = `Running ProCrafters Client v${Utils.version}`;
 
 		if(optifine) {
 			running += " with " + optifine;

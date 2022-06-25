@@ -204,8 +204,8 @@ def replayModRuntimeJar
 def replayModShippedJar
 
 if(workspaceReady) {
-	def methodsFile = new File(mcpFolder, "methods.csv");
-	def fieldsFile = new File(mcpFolder, "fields.csv");
+	def methodsFile = new File(mcpFolder, "methods.csv")
+	def fieldsFile = new File(mcpFolder, "fields.csv")
 
 	def srgFolder = new File(mcpFolder, "srgs")
 
@@ -345,8 +345,8 @@ configurations {
 }
 
 dependencies {
-	compileOnly "org.projectlombok:lombok:1.18.20"
-	annotationProcessor "org.projectlombok:lombok:1.18.20"
+	compileOnly 'org.projectlombok:lombok:1.18.24'
+	annotationProcessor 'org.projectlombok:lombok:1.18.24'
 	annotationProcessor "org.spongepowered:mixin:0.7.11-SNAPSHOT"
 	dependency("org.spongepowered:mixin:0.7.11-SNAPSHOT") {
 		exclude module: "launchwrapper"

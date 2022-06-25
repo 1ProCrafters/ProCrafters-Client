@@ -421,7 +421,7 @@ class Launcher {
 		args.push("net.minecraft.launchwrapper.Launch");
 
 		args.push("--version");
-		args.push("Sol Client");
+		args.push("ProCrafters Client");
 
 		var activeAccount = this.accountManager.activeAccount;
 
