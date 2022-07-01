@@ -26,7 +26,7 @@ import io.github.solclient.client.util.data.Colour;
 import net.minecraft.client.multiplayer.WorldClient;
 
 /**
- * ProCrafters Client representation of Replay Mod.
+ * Sol Client representation of Replay Mod.
  * This allows it to appear in the mod list.
  *
  * Originally by CrushedPixel and johni0702.

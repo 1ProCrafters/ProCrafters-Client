@@ -153,7 +153,7 @@ If you have private messages, try reproducing this issue again.`,
 		}
 		running += ".";
 
-		var url = new URL("https://github.com/TheKodeToad/Sol-Client/issues/new/")
+		var url = new URL("https://github.com/1ProCrafters/ProCrafters-Client/issues/new/")
 		url.searchParams.set("body", `## Description
 A description of the problem that is occurring.
 ## Steps to Reproduce

@@ -94,7 +94,7 @@ import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.ResourceLocation;
 
 /**
- * Main class for ProCrafters Client.
+ * Main class for Sol Client.
  */
 public class Client {
 
@@ -106,7 +106,7 @@ public class Client {
 	private Map<String, Mod> modsById = new HashMap<>();
 	@Getter
 	private List<HudElement> huds = new ArrayList<HudElement>();
-	private static final Logger LOGGER = LogManager.getLogger();
+	public static final Logger LOGGER = LogManager.getLogger();
 
 	private final File DATA_FILE = new File(Minecraft.getMinecraft().mcDataDir, "sol_client_mods.json");
 	private final File LEGACY_DATA_FILE = new File(Minecraft.getMinecraft().mcDataDir, "parrot_client_mods.json" /* This was the old name. */ );
@@ -122,7 +122,7 @@ public class Client {
 	private ChatChannelSystem chatChannelSystem;
 
 	public static final String VERSION = System.getProperty("io.github.solclient.client.version", "DEVELOPMENT TEST");
-	public static final String NAME = "ProCrafters Client " + VERSION;
+	public static final String NAME = "Sol Client " + VERSION;
 	public static final String KEY_TRANSLATION_KEY = "sol_client.key";
 	public static final String KEY_CATEGORY = KEY_TRANSLATION_KEY + ".category";
 	public static final boolean DEV = isDevelopment();
@@ -137,9 +137,8 @@ public class Client {
 
 	public void init() {
 		Utils.resetLineWidth();
-		new File(mc.mcDataDir, "server-resource-packs").mkdirs(); // Fix crash
-
-		System.setProperty("http.agent", "ProCrafters Client/" + VERSION);
+		new File(Minecraft.getMinecraft().mcDataDir, "server-resource-packs").mkdirs(); // Fix crash
+		System.setProperty("http.agent", "Sol Client/" + Client.VERSION);
 
 		LOGGER.info("Initialising...");
 		bus.register(this);

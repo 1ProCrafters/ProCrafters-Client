@@ -144,7 +144,7 @@ public class CustomTweakerPlugin extends ClientTweaker {
 	private String fallbackGetWithEtag(String strUrl) {
 		try {
 			if ("http://export.mcpbot.bspk.rs/versions.json".equals(strUrl)) {
-				// ProCrafters Client - Use potentially older local version.
+				// Sol Client - Use potentially older local version.
 				return Resources.toString(getClass().getResource("/McpMappings.json"), StandardCharsets.UTF_8);
 			}
 		}

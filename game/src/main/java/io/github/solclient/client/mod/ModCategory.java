@@ -9,7 +9,7 @@ import net.minecraft.client.resources.I18n;
 import net.minecraft.util.EnumChatFormatting;
 
 /**
- * Categories of ProCrafters Client mods.
+ * Categories of Sol Client mods.
  */
 @RequiredArgsConstructor
 public enum ModCategory {
